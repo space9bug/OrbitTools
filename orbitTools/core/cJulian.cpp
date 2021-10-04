@@ -37,7 +37,11 @@ cJulian::cJulian(time_t time)
 {
    struct tm stm;
    
+#ifdef WIN32
    gmtime_s(&stm, &time);
+#else
+   gmtime_r(&time, &stm);
+#endif
 
    int    year = stm.tm_year + 1900;
    double day  = stm.tm_yday + 1.0 +
@@ -238,7 +242,11 @@ time_t cJulian::ToTime() const
       // to be adjusted by the difference between this time zone and GMT.
       long secDelta;
 
+#ifdef _MSC_VER
       _get_timezone(&secDelta);
+#else
+      secDelta = timezone;
+#endif
 
       tEpoch -= secDelta;
    }

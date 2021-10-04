@@ -26,7 +26,7 @@
     <ClCompile Include="cSite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cTLE.cpp">
+    <ClCompile Include="cTle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cVector.cpp">
@@ -55,7 +55,7 @@
     <ClInclude Include="cSite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cTLE.h">
+    <ClInclude Include="cTle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cVector.h">

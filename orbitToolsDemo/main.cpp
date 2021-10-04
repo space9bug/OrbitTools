@@ -25,7 +25,7 @@
 void PrintPosVel(const cSatellite& sat);
 
 //////////////////////////////////////////////////////////////////////////////
-int main(int /* argc */, char* /* argv[] */)
+int main(int argc, char* argv[])
 {
    // Test SGP4 TLE data
    string str1 = "SGP4 Test";

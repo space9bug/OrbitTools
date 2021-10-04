@@ -144,7 +144,7 @@
     <ClCompile Include="cJulian.cpp" />
     <ClCompile Include="coord.cpp" />
     <ClCompile Include="cSite.cpp" />
-    <ClCompile Include="cTLE.cpp" />
+    <ClCompile Include="cTle.cpp" />
     <ClCompile Include="cVector.cpp" />
     <ClCompile Include="globals.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -160,7 +160,7 @@
     <ClInclude Include="coord.h" />
     <ClInclude Include="coreLib.h" />
     <ClInclude Include="cSite.h" />
-    <ClInclude Include="cTLE.h" />
+    <ClInclude Include="cTle.h" />
     <ClInclude Include="cVector.h" />
     <ClInclude Include="exceptions.h" />
     <ClInclude Include="globals.h" />

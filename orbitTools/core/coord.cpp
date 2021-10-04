@@ -72,11 +72,19 @@ string cGeo::ToString() const
    bool isNorth = (LatitudeRad()  >= 0.0);
    bool isEast  = (LongitudeRad() >= 0.0);
 
+#ifdef _MSC_VER
    _snprintf_s(sz, BUF_SIZE, 
                "%04.3f%c %05.3f%c %.1fm", 
                fabs(LatitudeDeg()),  (isNorth ? 'N' : 'S'),
                fabs(LongitudeDeg()), (isEast  ? 'E' : 'W'),
                AltitudeKm() * 1000.0);
+#else
+   snprintf(sz, BUF_SIZE, 
+               "%04.3f%c %05.3f%c %.1fm", 
+               fabs(LatitudeDeg()),  (isNorth ? 'N' : 'S'),
+               fabs(LongitudeDeg()), (isEast  ? 'E' : 'W'),
+               AltitudeKm() * 1000.0);
+#endif
 
    string strLoc = sz;
 

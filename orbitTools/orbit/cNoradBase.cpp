@@ -18,7 +18,7 @@
 //
 // mfh 12/2010
 //
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "cNoradBase.h"
 #include "cOrbit.h"
 #include "coord.h"

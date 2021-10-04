@@ -6,11 +6,11 @@
 #pragma once
 
 #include <stdio.h>
-#include <tchar.h>
 #include <assert.h>
 #include <math.h>
 #include <time.h>
 
+#include <cstring>
 #include <string>
 #include <map>
 
